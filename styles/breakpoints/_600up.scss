@@ -1,0 +1,129 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.main-title {
+  font-size: 60px;
+  margin: 15px 0 70px 0;
+  // -webkit-text-stroke: 0.3px $cBlack;
+}
+
+.concept {
+  font-size: 18px;
+  width: 90%;
+
+  p {
+    margin: 12px 0;
+  }
+}
+
+.menu {
+  width: 90%;
+  
+  &__head {
+    p {
+      font-size: 16px;
+      margin: 20px 0 0 8px;
+    }
+  }
+  &__title {
+    margin: 18px 0;
+    border-bottom: 0.8px solid black;
+
+    h1{
+      font-size: 30px;
+    }
+  }
+  .menu-text{
+    font-size: 16px;
+    margin: 0 0 0 15px;
+  }
+  .lunch{
+    &__set {
+      font-size: 18px;
+      margin-bottom: 10px;
+
+      p {
+        margin: 10px 0 5px 3%;
+      }
+      .point-leader {
+        margin: 0 12px;
+      }
+    }
+  }
+  .dinner {
+    margin: 30px auto;
+
+    &__course {
+      font-size: 18px;
+
+      p {
+        margin: 15px 0 0 2%;
+      }
+      dd {
+        font-size: 15px;
+        margin: 0 0 10px 2%;
+      }
+    }
+  }
+}
+
+.news {
+  font-size: 18px;
+  width: 90%;
+
+  p {
+    margin-top: 10px;
+  }
+  .cover-slide {
+    margin: 20px auto;
+  }
+}
+
+.information{
+  width: 90%;
+  margin: 30px auto 0 auto;
+}
+.info{
+  dd {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+}
+
+.footer{
+  span{
+    margin-left: 25px;
+    font-size: 14px;
+  }
+}
+
+.mobile-menu {
+  font-size: 20px;
+
+  &__btn {
+      & > span {
+          width: 35px;
+          height: 1.6px;
+          margin-bottom: 10px;
+      }
+  }
+}
+
+.menu-open {
+  & .mobile-menu {
+    &__btn {
+      & > span {
+        font-size: 5vw;
+        &:nth-child(1) {
+            transform: translateY(11px) rotate(135deg);
+        }
+        &:nth-child(3) {
+            transform: translateY(-11px) rotate(-135deg);
+        }
+      }
+    }
+  }
+}

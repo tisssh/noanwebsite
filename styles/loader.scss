@@ -1,0 +1,77 @@
+@import 'modules/variables';
+@import 'modules/mixin';
+
+.pace-done #global-container {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+#global-container {
+  opacity: 0;
+}
+
+.pace {
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  // background-image: url(../images/IMG_4319.PNG);
+  // background-color: #F0871A;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 40vh;
+}
+
+.pace .pace-progress {
+  transform: none !important;
+  text-align: center;
+  // margin-top: -50vh;
+  // height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.pace .pace-progress::after {
+  content: attr(data-progress-text);
+  display: block;
+  font-weight: 100;
+  font-size: 1.5em;
+  font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
+  color: black;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+.pace-progress-inner {
+  width: 40px;
+  height: 40px;
+  background-color: #F0871A;
+  
+  margin: 0 auto;
+  margin-top: 50vh;
+  @include animation(
+    $name: sk-rotateplane,
+    $duration: 1.2s,
+    $iteration-count: infinite,
+    $timing-function: ease-in-out
+  );
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+  }
+}

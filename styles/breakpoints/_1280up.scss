@@ -1,0 +1,64 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+.main-title {
+  font-size: 70px;
+  margin: 15px 0 100px 0;
+  // -webkit-text-stroke: 0.3px $cBlack;
+}
+
+.concept {
+  width: 70%;
+
+  h3 {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.menu {
+  width: 70%;
+  
+  .lunch{
+    h1 {
+      font-size: 38px;
+    }
+    &__set {
+      margin-bottom: 16px;
+    }
+  }
+  .dinner {
+    h1 {
+      font-size: 38px;
+    }
+    &__course {
+      p {
+        margin: 20px 0 0 2%;
+      }
+    }
+  }
+}
+
+.news {
+  width: 70%;
+
+  .cover-slide {
+    margin: 30px auto;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+
+.information{
+  width: 70%;
+}
+.info{
+  dd {
+    margin-top: 20px;
+  }
+}
